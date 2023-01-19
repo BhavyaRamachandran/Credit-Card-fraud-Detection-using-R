@@ -1,0 +1,1739 @@
+<html>
+<head>
+<title>D:\uploadedFiles\7ba96a37255662c22abc914a51bc37-946a436f688cf3c\p1gn536g7cqio3ml1328d241tjg4.pdf</title>
+<style type="text/css">
+<!--
+body { font-family: Arial; font-size: 27.0px }
+.pos { position: absolute; z-index: 0; left: 0px; top: 0px }
+-->
+</style>
+</head>
+<body>
+<nobr><nowrap>
+<div class="pos" id="_0:0" style="top:0">
+<img name="_1170:827" src="page_001.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_192:59" style="top:59;left:192">
+<span id="_19.9" style="font-weight:bold; font-family:Times New Roman; font-size:19.9px; color:#000000">
+CREDIT CARD FRUD DETECTION USING R</span>
+</div>
+<div class="pos" id="_39:131" style="top:131;left:39">
+<span id="_19.9" style="font-weight:bold; font-family:Times New Roman; font-size:19.9px; color:#000000">
+ </span>
+</div>
+<div class="pos" id="_39:167" style="top:167;left:39">
+<span id="_19.9" style="font-weight:bold; font-family:Times New Roman; font-size:19.9px; color:#000000">
+ABSTRACT</span>
+</div>
+<div class="pos" id="_39:230" style="top:230;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+In today&#146;s world, the easiest mode of payment is a credit card for both online and offline. It helps in providing </span>
+</div>
+<div class="pos" id="_39:259" style="top:259;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+cashless shopping across the globe. Fraud events occur only during online payment as credit card number is </span>
+</div>
+<div class="pos" id="_39:287" style="top:287;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+sufficient to make a transaction which will be on the credit card to make an online payment but for offline </span>
+</div>
+<div class="pos" id="_39:316" style="top:316;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+payment, the password will be asked so during offline transaction frauds cannot occur. In the existing system </span>
+</div>
+<div class="pos" id="_39:345" style="top:345;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+of detecting fraud transactions, the fraud is detected after the transaction is done. Having predictive algorithms </span>
+</div>
+<div class="pos" id="_39:374" style="top:374;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+can help to detect fraudulent transactions. To analyze and detect fraud events we have used Decision Trees, </span>
+</div>
+<div class="pos" id="_39:402" style="top:402;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+Logistic Regression, it will be able to discern fraudulent from non-fraudulent.</span>
+</div>
+<div class="pos" id="_39:462" style="top:462;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+KEYWORD: Credit card fraud detection model, Machine learning algorithms, Decision tree, logistic </span>
+</div>
+<div class="pos" id="_39:490" style="top:490;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+Regression.</span>
+</div>
+<div class="pos" id="_39:550" style="top:550;left:39">
+<span id="_19.9" style="font-weight:bold; font-family:Times New Roman; font-size:19.9px; color:#000000">
+TABLE OF CONTENT</span>
+</div>
+<div class="pos" id="_39:607" style="top:607;left:39">
+<span id="_26.9" style=" font-family:Times New Roman; font-size:26.9px; color:#000000">
+&#160;<span id="_16.9" style=" font-size:16.9px"> INTRODUCTION</span></span>
+</div>
+<div class="pos" id="_39:635" style="top:635;left:39">
+<span id="_26.9" style=" font-family:Times New Roman; font-size:26.9px; color:#000000">
+&#160;<span id="_16.9" style=" font-size:16.9px"> ABOUT THE PROJECT</span></span>
+</div>
+<div class="pos" id="_39:664" style="top:664;left:39">
+<span id="_26.1" style=" font-family:Times New Roman; font-size:26.1px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> HARDWARE AND SOFTWARE REQUIREMENTS</span></span>
+</div>
+<div class="pos" id="_39:693" style="top:693;left:39">
+<span id="_26.1" style=" font-family:Times New Roman; font-size:26.1px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> ABOUT THE SOFTWARE</span></span>
+</div>
+<div class="pos" id="_39:722" style="top:722;left:39">
+<span id="_26.1" style=" font-family:Times New Roman; font-size:26.1px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> DATA FLOW DIAGRAM</span></span>
+</div>
+<div class="pos" id="_39:750" style="top:750;left:39">
+<span id="_26.1" style=" font-family:Times New Roman; font-size:26.1px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> SCREEN SHOTS & explanation</span></span>
+</div>
+<div class="pos" id="_39:779" style="top:779;left:39">
+<span id="_26.1" style=" font-family:Times New Roman; font-size:26.1px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> DATA BASE DESIGN</span></span>
+</div>
+<div class="pos" id="_39:808" style="top:808;left:39">
+<span id="_27.4" style=" font-family:Times New Roman; font-size:27.4px; color:#000000">
+&#160;<span id="_17.2" style=" font-size:17.2px"> TEST CASES</span></span>
+</div>
+<div class="pos" id="_39:837" style="top:837;left:39">
+<span id="_27.4" style=" font-family:Times New Roman; font-size:27.4px; color:#000000">
+&#160;<span id="_17.2" style=" font-size:17.2px"> CONCLUSION</span></span>
+</div>
+<div class="pos" id="_39:865" style="top:865;left:39">
+<span id="_27.4" style=" font-family:Times New Roman; font-size:27.4px; color:#000000">
+&#160;<span id="_17.2" style=" font-size:17.2px"> SOURCE CODE</span></span>
+</div>
+<div class="pos" id="_39:894" style="top:894;left:39">
+<span id="_26.5" style=" font-family:Times New Roman; font-size:26.5px; color:#000000">
+&#160;<span id="_16.7" style=" font-size:16.7px"> BIBLIOGRAPHY</span></span>
+</div>
+<div class="pos" id="_0:0" style="top:1170">
+<img name="_1170:827" src="page_002.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:1248" style="top:1248;left:39">
+<span id="_20.0" style="font-weight:bold; font-family:Times New Roman; font-size:20.0px; color:#000000">
+INTRODUCTION</span>
+</div>
+<div class="pos" id="_39:1311" style="top:1311;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+In our daily routine, we use credit cards to buy goods and services using online transactions or physical cards </span>
+</div>
+<div class="pos" id="_39:1340" style="top:1340;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+for the offline transaction. In credit card-based purchases, the cardholder issues his card to the trader to do the </span>
+</div>
+<div class="pos" id="_39:1369" style="top:1369;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+payment. The person has to steal the card to make the transaction fraudulent. If the user is not aware of the </span>
+</div>
+<div class="pos" id="_39:1397" style="top:1397;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+loss of the card it leads to financial loss to the user as well as the credit card company. When the payment </span>
+</div>
+<div class="pos" id="_39:1426" style="top:1426;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+mode is online, attackers require only a little information for doing false transactions. Example card number. </span>
+</div>
+<div class="pos" id="_39:1455" style="top:1455;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+The only way to detect this kind of fraud is to analyze the spending patterns on every card. A fraud that is </span>
+</div>
+<div class="pos" id="_39:1484" style="top:1484;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+detected using existing purchase data of cardholders is a way to reduce the rate of fraud. Every cardholder is </span>
+</div>
+<div class="pos" id="_39:1512" style="top:1512;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+characterized by patterns containing information about distinctive purchase categories, the time since the last </span>
+</div>
+<div class="pos" id="_39:1541" style="top:1541;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+purchase, money spent, and other things. Companies have a detailed analysis of transactional and fraud data. </span>
+</div>
+<div class="pos" id="_39:1570" style="top:1570;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+Frauds tend to appear in patterns. In billions of credit card transactions, it is quite difficult to analyze each in </span>
+</div>
+<div class="pos" id="_39:1599" style="top:1599;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+isolation. Having predictive algorithms can help to detect fraudulent transactions. This is how data mining </span>
+</div>
+<div class="pos" id="_39:1627" style="top:1627;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+comes into play. Data consists of a combination of continuous data and nominal data. We can use various </span>
+</div>
+<div class="pos" id="_39:1656" style="top:1656;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+statistical tests to prevent fraud events. Detecting credit card fraud is still not a perfect science. While fraud is </span>
+</div>
+<div class="pos" id="_39:1685" style="top:1685;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+still a major financial issue to banks, the distribution of fraud to non-fraudulent transactions is severely </span>
+</div>
+<div class="pos" id="_39:1714" style="top:1714;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+skewed towards non-fraudulent transactions. Out of an estimated 12 billion transactions made annually 10 </span>
+</div>
+<div class="pos" id="_39:1742" style="top:1742;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+million are fraudulent. </span>
+</div>
+<div class="pos" id="_39:1771" style="top:1771;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+To analyze and predict fraud events we have used the Decision Trees algorithm, Logistic Regression.</span>
+</div>
+<div class="pos" id="_39:1830" style="top:1830;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+This project mainly focuses on  building a classifier that can detect credit card fraudulent transactions. By </span>
+</div>
+<div class="pos" id="_39:1859" style="top:1859;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+using a variety of machine learning algorithms that will be able to discern fraudulent from non-fraudulent </span>
+</div>
+<div class="pos" id="_39:1888" style="top:1888;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+ones.</span>
+</div>
+<div class="pos" id="_39:1947" style="top:1947;left:39">
+<span id="_20.0" style="font-weight:bold; font-family:Times New Roman; font-size:20.0px; color:#000000">
+ABOUT THE PROJECT</span>
+</div>
+<div class="pos" id="_39:2010" style="top:2010;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+In our daily lives, we use credit cards to buy goods and services online, and physical cards to make offline </span>
+</div>
+<div class="pos" id="_39:2039" style="top:2039;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+transactions. For credit card based purchases, the cardholder gives the seller a payment card. The person must </span>
+</div>
+<div class="pos" id="_39:2067" style="top:2067;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+steal the card in order to fraudulent the transaction. If the user does not recognize the loss of the card, this will </span>
+</div>
+<div class="pos" id="_39:2096" style="top:2096;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+result in financial losses for both the user and the credit card company. When the payment mode is online, the </span>
+</div>
+<div class="pos" id="_39:2125" style="top:2125;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+attacker needs very little information to execute a fake transaction. Sample card number. The only way to </span>
+</div>
+<div class="pos" id="_39:2154" style="top:2154;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+detect this type of fraud is to analyze the spending patterns on each card. Fraud detected by the cardholder's </span>
+</div>
+<div class="pos" id="_39:2182" style="top:2182;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+existing purchase data  is one way to reduce the fraud rate. Each cardholder is characterized by a pattern that </span>
+</div>
+<div class="pos" id="_39:2211" style="top:2211;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+contains information about different categories of purchases, time since the last purchase, money spent, and </span>
+</div>
+<div class="pos" id="_39:2240" style="top:2240;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+more. Enterprises perform in-depth analysis of transactions and fraudulent data. Scams are usually displayed </span>
+</div>
+<div class="pos" id="_39:2269" style="top:2269;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+in patterns. With billions of credit card transactions, it's quite difficult to analyze each one individually. </span>
+</div>
+<div class="pos" id="_0:0" style="top:2340">
+<img name="_1170:827" src="page_003.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:2380" style="top:2380;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+Prediction algorithms  help identify fraudulent transactions. This is where data mining comes in. The data </span>
+</div>
+<div class="pos" id="_39:2409" style="top:2409;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+consists of a combination of continuous data and nominal data. You can use various statistical tests to prevent </span>
+</div>
+<div class="pos" id="_39:2438" style="top:2438;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+fraud. Exposing credit card fraud is  not yet a complete science. Fraud remains a major financial problem for </span>
+</div>
+<div class="pos" id="_39:2467" style="top:2467;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+banks, but the distribution of fraud across non-fraud transactions is heavily biased towards non-fraud </span>
+</div>
+<div class="pos" id="_39:2495" style="top:2495;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+transactions. Of the estimated 12 billion transactions that take place each year, 10 million are fraudulent. </span>
+</div>
+<div class="pos" id="_39:2524" style="top:2524;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+ We used logistic regression, a decision tree algorithm, to analyze and predict rogue events. </span>
+</div>
+<div class="pos" id="_39:2553" style="top:2553;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+ This project  focuses primarily on building classifiers that can detect fraudulent credit card  transactions. Use </span>
+</div>
+<div class="pos" id="_39:2582" style="top:2582;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+various machine learning algorithms that can distinguish between fraudulent and non-fraudulent.</span>
+</div>
+<div class="pos" id="_39:2631" style="top:2631;left:39">
+<span id="_20.2" style="font-weight:bold; font-family:Times New Roman; font-size:20.2px; color:#000000">
+Data Collection</span>
+</div>
+<div class="pos" id="_39:2679" style="top:2679;left:39">
+<span id="_20.2" style="font-weight:bold; font-family:Times New Roman; font-size:20.2px; color:#000000">
+Credit Card Fraud Dataset</span>
+</div>
+<div class="pos" id="_39:2712" style="top:2712;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The dataset that is used in this project is obtained from Kaggle .</span></span>
+</div>
+<div class="pos" id="_39:2741" style="top:2741;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The dataset contains transactions made by credit cards in September 2013 by European cardholders. </span></span>
+</div>
+<div class="pos" id="_39:2770" style="top:2770;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> This dataset presents transactions that occurred in two days, where it has 492 frauds out of 284,807 </span></span>
+</div>
+<div class="pos" id="_68:2812" style="top:2812;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+transactions. </span>
+</div>
+<div class="pos" id="_39:2827" style="top:2827;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The dataset is highly unbalanced, here are 492 fraudulent credit card transactions out of a total of 284,807 </span></span>
+</div>
+<div class="pos" id="_68:2869" style="top:2869;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+transactions, which is a total of about 0.172% of all transactions.</span>
+</div>
+<div class="pos" id="_39:2885" style="top:2885;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> All details of the cardholders have been anonymized via a principal component analysis (PCA) transform</span></span>
+</div>
+<div class="pos" id="_39:2914" style="top:2914;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> It contains only numeric input variables which are the result of a PCA transformation. </span></span>
+</div>
+<div class="pos" id="_39:2942" style="top:2942;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Unfortunately, due to confidentiality issues, there are no original features and more background </span></span>
+</div>
+<div class="pos" id="_68:2984" style="top:2984;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+information about the data. </span>
+</div>
+<div class="pos" id="_39:3000" style="top:3000;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Features V1, V2, &#133; V28 are the principal components obtained with PCA, the only features which have </span></span>
+</div>
+<div class="pos" id="_68:3042" style="top:3042;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+not been transformed with PCA are &#145;Time&#146; and &#145;Amount&#146;. </span>
+</div>
+<div class="pos" id="_39:3057" style="top:3057;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Feature &#145;Time&#146; contains the seconds elapsed between each transaction and the first transaction in the </span></span>
+</div>
+<div class="pos" id="_68:3099" style="top:3099;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+dataset. </span>
+</div>
+<div class="pos" id="_39:3115" style="top:3115;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The feature &#145;Amount&#146; is the transaction Amount, this feature can be used, for example-dependent cost-</span></span>
+</div>
+<div class="pos" id="_68:3157" style="top:3157;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+sensitive learning.</span>
+</div>
+<div class="pos" id="_39:3172" style="top:3172;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Feature &#145;Class&#146; is the response variable and it takes class 1 value as fraudulent  and class 0 as Non-</span></span>
+</div>
+<div class="pos" id="_68:3214" style="top:3214;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+fraudulent and the transactions are heavily skewed towards Non-fraudulent. </span>
+</div>
+<div class="pos" id="_39:3264" style="top:3264;left:39">
+<span id="_20.2" style="font-weight:bold; font-family:Times New Roman; font-size:20.2px; color:#000000">
+Install the Packages</span>
+</div>
+<div class="pos" id="_39:3292" style="top:3292;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here, I'm using Rstudio as a tool for my project.</span></span>
+</div>
+<div class="pos" id="_39:3321" style="top:3321;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> In Rstudio, I have installed packages which are ranger, caret, data.table</span></span>
+</div>
+<div class="pos" id="_39:3399" style="top:3399;left:39">
+<span id="_20.2" style="font-weight:bold; font-family:Times New Roman; font-size:20.2px; color:#000000">
+Importing the Datasets:</span>
+</div>
+<div class="pos" id="_39:3423" style="top:3423;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here, I&#146;m importing the datasets that contain transactions made by credit cards.</span></span>
+</div>
+<div class="pos" id="_0:0" style="top:3510">
+<img name="_1170:827" src="page_004.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:3537" style="top:3537;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> I&#146;m using read.csv() function to read  credit card.csv file which in my current working directory </span></span>
+</div>
+<div class="pos" id="_39:3566" style="top:3566;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> And printing the data in the credit card.csv file.</span></span>
+</div>
+<div class="pos" id="_39:3634" style="top:3634;left:39">
+<span id="_20.3" style="font-weight:bold; font-family:Times New Roman; font-size:20.3px; color:#000000">
+Data Exploration:</span>
+</div>
+<div class="pos" id="_39:3662" style="top:3662;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here, I explore the data that is contained in the creditcard_data dataframe.</span></span>
+</div>
+<div class="pos" id="_39:3691" style="top:3691;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Then, I'm displaying the creditcard_data using the head() function as well as the tail() function.</span></span>
+</div>
+<div class="pos" id="_39:3719" style="top:3719;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Then, I proceed to explore the other components of this dataframe.</span></span>
+</div>
+<div class="pos" id="_39:3748" style="top:3748;left:39">
+<span id="_26.6" style=" font-family:Times New Roman; font-size:26.6px; color:#000000">
+&#160;<span id="_16.7" style=" font-size:16.7px"> table() function</span></span>
+</div>
+<div class="pos" id="_39:3777" style="top:3777;left:39">
+<span id="_26.6" style=" font-family:Times New Roman; font-size:26.6px; color:#000000">
+&#160;<span id="_16.7" style=" font-size:16.7px"> summary() function</span></span>
+</div>
+<div class="pos" id="_39:3806" style="top:3806;left:39">
+<span id="_26.6" style=" font-family:Times New Roman; font-size:26.6px; color:#000000">
+&#160;<span id="_16.7" style=" font-size:16.7px"> names() function</span></span>
+</div>
+<div class="pos" id="_39:3834" style="top:3834;left:39">
+<span id="_26.6" style=" font-family:Times New Roman; font-size:26.6px; color:#000000">
+&#160;<span id="_16.7" style=" font-size:16.7px"> var() function</span></span>
+</div>
+<div class="pos" id="_39:3863" style="top:3863;left:39">
+<span id="_26.6" style=" font-family:Times New Roman; font-size:26.6px; color:#000000">
+&#160;<span id="_16.7" style=" font-size:16.7px">  sd() function</span></span>
+</div>
+<div class="pos" id="_39:3935" style="top:3935;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Data Visualization</span>
+</div>
+<div class="pos" id="_39:3965" style="top:3965;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> By using data visualization we can know more details about the data into charts, graphs and other visuals.</span></span>
+</div>
+<div class="pos" id="_39:4004" style="top:4004;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Here, I have used pie chart for knowing more about the dataset.</span></span>
+</div>
+<div class="pos" id="_39:4033" style="top:4033;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> I have used c function to combine the non-fruad and fraud and it stores in the variable called labels.</span></span>
+</div>
+<div class="pos" id="_39:4062" style="top:4062;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Then I have used paste function to concatenate the labels and round.</span></span>
+</div>
+<div class="pos" id="_39:4090" style="top:4090;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> In round function I have given table function in the dataset by extracting class feature.</span></span>
+</div>
+<div class="pos" id="_39:4119" style="top:4119;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Then I have used pop.table function for calculating the percentage of the class feature by giving 2 as </span></span>
+</div>
+<div class="pos" id="_68:4161" style="top:4161;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+decimal.</span>
+</div>
+<div class="pos" id="_39:4177" style="top:4177;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Then I have used paste0 function to concatenate the labels and percentage.</span></span>
+</div>
+<div class="pos" id="_39:4205" style="top:4205;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Then I have used pie chart for plotting.</span></span>
+</div>
+<div class="pos" id="_39:4234" style="top:4234;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> In pie I have used table function in the dataset by extracting class feature and I have labels then by using c </span></span>
+</div>
+<div class="pos" id="_68:4276" style="top:4276;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+function I have combine the color blue and red blue is for non fraud and red is for fraud.</span>
+</div>
+<div class="pos" id="_39:4292" style="top:4292;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Then I have given main to to the heading of pie chart.</span></span>
+</div>
+<div class="pos" id="_39:4320" style="top:4320;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px">  In the chart it shows that 99.83% for non-fraud and 0.17% for fraud.</span></span>
+</div>
+<div class="pos" id="_39:4446" style="top:4446;left:39">
+<span id="_20.1" style="font-weight:bold; font-family:Times New Roman; font-size:20.1px; color:#000000">
+Data Manipulation</span>
+</div>
+<div class="pos" id="_39:4471" style="top:4471;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Here, the data is composed of attributes with varying scale.</span></span>
+</div>
+<div class="pos" id="_39:4500" style="top:4500;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> So we have to re-scale the attributes to the same range. </span></span>
+</div>
+<div class="pos" id="_39:4528" style="top:4528;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> We will scale our data using the scale() function. </span></span>
+</div>
+<div class="pos" id="_39:4557" style="top:4557;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> We will apply this to the amount component of our creditcard_data amount.</span></span>
+</div>
+<div class="pos" id="_39:4586" style="top:4586;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Scaling is also known as feature standardization. </span></span>
+</div>
+<div class="pos" id="_0:0" style="top:4680">
+<img name="_1170:827" src="page_005.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:4707" style="top:4707;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> With the help of scaling, the data is structured according to a specified range.</span></span>
+</div>
+<div class="pos" id="_39:4736" style="top:4736;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Therefore, there are no extreme values in our dataset that might interfere with the functioning of our </span></span>
+</div>
+<div class="pos" id="_68:4778" style="top:4778;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+model.  </span>
+</div>
+<div class="pos" id="_39:4794" style="top:4794;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Scale () function in R Language is a generic function which centers and scales the columns of a numeric </span></span>
+</div>
+<div class="pos" id="_68:4835" style="top:4835;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+matrix. </span>
+</div>
+<div class="pos" id="_39:4851" style="top:4851;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The center parameter takes either a numeric-like vector or logical value. </span></span>
+</div>
+<div class="pos" id="_39:4880" style="top:4880;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> If the numeric vector is provided, then each column of the matrix has the corresponding value from the </span></span>
+</div>
+<div class="pos" id="_68:4922" style="top:4922;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+center subtracted from it.</span>
+</div>
+<div class="pos" id="_39:4967" style="top:4967;left:39">
+<span id="_20.3" style="font-weight:bold; font-family:Times New Roman; font-size:20.3px; color:#000000">
+Data Modeling</span>
+</div>
+<div class="pos" id="_39:5004" style="top:5004;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> After,  the entire dataset  standardized .</span></span>
+</div>
+<div class="pos" id="_39:5048" style="top:5048;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> I split the data frame into a training set and testing set using the function sample.split. </span></span>
+</div>
+<div class="pos" id="_39:5092" style="top:5092;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Sample.split function splits the data using given ratio in our case 80% for training set and 20% for testing </span></span>
+</div>
+<div class="pos" id="_68:5134" style="top:5134;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+set</span>
+</div>
+<div class="pos" id="_39:5149" style="top:5149;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Dim() function that returns the dimension of the training set and testing set. </span></span>
+</div>
+<div class="pos" id="_39:5178" style="top:5178;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The set. seed() function sets the starting number used to generate a sequence of random numbers &#150; it </span></span>
+</div>
+<div class="pos" id="_68:5220" style="top:5220;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+ensures that we get the same result if we start with that same seed each time you run the same process.</span>
+</div>
+<div class="pos" id="_39:5279" style="top:5279;left:39">
+<span id="_20.3" style="font-weight:bold; font-family:Times New Roman; font-size:20.3px; color:#000000">
+Fitting Logistic Regression Model</span>
+</div>
+<div class="pos" id="_39:5305" style="top:5305;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here, I'm fitting  model with the logistic regression. </span></span>
+</div>
+<div class="pos" id="_39:5334" style="top:5334;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> A logistic regression is used for modeling the outcome probability of a class such as pass/fail, </span></span>
+</div>
+<div class="pos" id="_68:5376" style="top:5376;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+positive/negative and in our case &#150; fraud/not fraud.</span>
+</div>
+<div class="pos" id="_39:5392" style="top:5392;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here, I proceed to implement the model on the train data and find the summary of the train data by using </span></span>
+</div>
+<div class="pos" id="_68:5433" style="top:5433;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+summary function in that summary I will get Null deviance: 5799.1  on 227845  degrees of freedom </span>
+</div>
+<div class="pos" id="_68:5462" style="top:5462;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+Residual deviance: 1790.9  on 227816  degrees of freedom AIC: 1850.9.</span>
+</div>
+<div class="pos" id="_39:5478" style="top:5478;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here,I proceed to implement this model on the test data in that by using confusion matrix im going find </span></span>
+</div>
+<div class="pos" id="_68:5520" style="top:5520;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+the accuracy of this model. So the accuracy is 0.9988764.</span>
+</div>
+<div class="pos" id="_39:5591" style="top:5591;left:39">
+<span id="_20.3" style="font-weight:bold; font-family:Times New Roman; font-size:20.3px; color:#000000">
+Fitting a Decision Tree Model</span>
+</div>
+<div class="pos" id="_39:5617" style="top:5617;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here, I'm implementing  a decision tree algorithm. </span></span>
+</div>
+<div class="pos" id="_39:5645" style="top:5645;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Decision Trees to plot the outcomes of a decision. </span></span>
+</div>
+<div class="pos" id="_39:5674" style="top:5674;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> These outcomes are basically a consequence through which we can conclude as to what class the object </span></span>
+</div>
+<div class="pos" id="_68:5716" style="top:5716;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+belongs to. </span>
+</div>
+<div class="pos" id="_39:5732" style="top:5732;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Now implement the decision tree model and will plot it using the rpart.plot() function.</span></span>
+</div>
+<div class="pos" id="_39:5760" style="top:5760;left:39">
+<span id="_25.8" style=" font-family:Times New Roman; font-size:25.8px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here, I'm specifically using  the recursive parting to plot the decision tree.</span></span>
+</div>
+<div class="pos" id="_0:0" style="top:5850">
+<img name="_1170:827" src="page_006.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:5921" style="top:5921;left:39">
+<span id="_20.1" style="font-weight:bold; font-family:Times New Roman; font-size:20.1px; color:#000000">
+HARDWARE AND SOFTWARE REQUIREMENTS</span>
+</div>
+<div class="pos" id="_39:5956" style="top:5956;left:39">
+<span id="_16.1" style="font-weight:bold; font-family:Times New Roman; font-size:16.1px; color:#000000">
+HARDWARE REQUIREMENTS <span id="_14.8" style=" font-size:14.8px"> </span></span>
+</div>
+<div class="pos" id="_39:5978" style="top:5978;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Processor &#150; Intel(R) Core (TM) i5-8265U CPU @ 1.60GHz 1.80 GHz </span></span>
+</div>
+<div class="pos" id="_39:6007" style="top:6007;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Hard disk: 1TB  RAM: 8.00 GB (7.89 GB usable) </span></span>
+</div>
+<div class="pos" id="_39:6036" style="top:6036;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> SYSTEM TYPE: 64-bit operating system, x64-based processor</span></span>
+</div>
+<div class="pos" id="_39:6107" style="top:6107;left:39">
+<span id="_16.1" style="font-weight:bold; font-family:Times New Roman; font-size:16.1px; color:#000000">
+SOFTWARE REQUIREMENTS </span>
+</div>
+<div class="pos" id="_39:6129" style="top:6129;left:39">
+<span id="_26.8" style=" font-family:Times New Roman; font-size:26.8px; color:#000000">
+&#160;<span id="_16.9" style=" font-size:16.9px"> WINDOWS 10 </span></span>
+</div>
+<div class="pos" id="_39:6158" style="top:6158;left:39">
+<span id="_26.8" style=" font-family:Times New Roman; font-size:26.8px; color:#000000">
+&#160;<span id="_16.9" style=" font-size:16.9px"> RStudio (Rstudio IDE)</span></span>
+</div>
+<div class="pos" id="_39:6187" style="top:6187;left:39">
+<span id="_26.8" style=" font-family:Times New Roman; font-size:26.8px; color:#000000">
+&#160;<span id="_16.9" style=" font-size:16.9px"> CSV  dataset  </span></span>
+</div>
+<div class="pos" id="_39:6266" style="top:6266;left:39">
+<span id="_20.1" style="font-weight:bold; font-family:Times New Roman; font-size:20.1px; color:#000000">
+ABOUT THE SOFTWARE</span>
+</div>
+<div class="pos" id="_39:6301" style="top:6301;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+R is a free, open-source software and programming language developed in 1995 at the University of Auckland </span>
+</div>
+<div class="pos" id="_39:6329" style="top:6329;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+as an environment for statistical computing and graphics (Ikaha and Gentleman, 1996). Since then R has </span>
+</div>
+<div class="pos" id="_39:6358" style="top:6358;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+become one of the dominant software environments for data analysis and is used by a variety of scientific </span>
+</div>
+<div class="pos" id="_39:6387" style="top:6387;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+disiplines, including soil science, ecology, and geoinformatics (Envirometrics CRAN Task View; Spatial </span>
+</div>
+<div class="pos" id="_39:6415" style="top:6415;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+CRAN Task View). R is particularly popular for its graphical capabilities, but it is also prized for it&#146;s GIS </span>
+</div>
+<div class="pos" id="_39:6444" style="top:6444;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+capabilities which make it relatively easy to generate raster-based models. More recently, R has also gained </span>
+</div>
+<div class="pos" id="_39:6473" style="top:6473;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+several packages which are designed specifically for analyzing soil data.</span>
+</div>
+<div class="pos" id="_39:6508" style="top:6508;left:39">
+<span id="_26.3" style=" font-family:Times New Roman; font-size:26.3px; color:#000000">
+&#160;<span id="_16.6" style=" font-size:16.6px"> a software environment:</span></span>
+</div>
+<div class="pos" id="_39:6537" style="top:6537;left:39">
+<span id="_27.5" style=" font-family:Times New Roman; font-size:27.5px; color:#000000">
+&#160;<span id="_17.3" style=" font-size:17.3px"> statistics</span></span>
+</div>
+<div class="pos" id="_39:6566" style="top:6566;left:39">
+<span id="_27.5" style=" font-family:Times New Roman; font-size:27.5px; color:#000000">
+&#160;<span id="_17.3" style=" font-size:17.3px"> graphics</span></span>
+</div>
+<div class="pos" id="_39:6594" style="top:6594;left:39">
+<span id="_27.5" style=" font-family:Times New Roman; font-size:27.5px; color:#000000">
+&#160;<span id="_17.3" style=" font-size:17.3px"> programming</span></span>
+</div>
+<div class="pos" id="_39:6623" style="top:6623;left:39">
+<span id="_27.5" style=" font-family:Times New Roman; font-size:27.5px; color:#000000">
+&#160;<span id="_17.3" style=" font-size:17.3px"> calculator</span></span>
+</div>
+<div class="pos" id="_39:6652" style="top:6652;left:39">
+<span id="_27.5" style=" font-family:Times New Roman; font-size:27.5px; color:#000000">
+&#160;<span id="_17.3" style=" font-size:17.3px"> GIS</span></span>
+</div>
+<div class="pos" id="_39:6681" style="top:6681;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> etc&#133;</span></span>
+</div>
+<div class="pos" id="_39:6709" style="top:6709;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> a language to explore, summarize, and model data</span></span>
+</div>
+<div class="pos" id="_39:6738" style="top:6738;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> functions = verbs</span></span>
+</div>
+<div class="pos" id="_39:6767" style="top:6767;left:39">
+<span id="_26.6" style=" font-family:Times New Roman; font-size:26.6px; color:#000000">
+&#160;<span id="_16.8" style=" font-size:16.8px"> objects = nouns</span></span>
+</div>
+<div class="pos" id="_39:6828" style="top:6828;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+R is an implementation of the S programming language combined with lexical scoping semantics. It is </span>
+</div>
+<div class="pos" id="_39:6857" style="top:6857;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+inspired by Scheme. S was created by John Chambers in 1976 while at Bell Labs. A commercial version of S </span>
+</div>
+<div class="pos" id="_39:6886" style="top:6886;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+was offered as S-PLUS starting in 1988. Many codes written for S-PLUS run unaltered in R.</span>
+</div>
+<div class="pos" id="_39:6922" style="top:6922;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+In 1991 Ross Ihaka and Robert Gentleman at the University of Auckland, New Zealand, embarked on an S </span>
+</div>
+<div class="pos" id="_39:6950" style="top:6950;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+implementation, independent of S-PLUS. They began publicizing it in 1993. It was named partly after the first </span>
+</div>
+<div class="pos" id="_0:0" style="top:7020">
+<img name="_1170:827" src="page_007.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:7060" style="top:7060;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+names of the first two R authors and partly as a play on the name of S. In 1995, Martin Maechler convinced </span>
+</div>
+<div class="pos" id="_39:7089" style="top:7089;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Ihaka and Gentleman to make R free and open-source software under the GNU General Public License. The R </span>
+</div>
+<div class="pos" id="_39:7118" style="top:7118;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Core Team was formed in 1997 to further develop the language. As of 2021, it consisted of Gentleman, Ihaka, </span>
+</div>
+<div class="pos" id="_39:7147" style="top:7147;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+and Maechler, plus Douglas Bates, John Chambers, Peter Dalgaard, Kurt Hornik, Tomas Kalibera, Michael </span>
+</div>
+<div class="pos" id="_39:7175" style="top:7175;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Lawrence, Friedrich Leisch, Uwe Ligges, Thomas Lumley, Martin Morgan, Paul Murrell, Martyn </span>
+</div>
+<div class="pos" id="_39:7204" style="top:7204;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Plummer, Brian Ripley, Deepayan Sarkar, Duncan Temple Lang, Luke Tierney, and Simon Urbanek. Heiner </span>
+</div>
+<div class="pos" id="_39:7233" style="top:7233;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Schwarte, Guido Masarotto, Stefano Iacus, Seth Falcon, and Duncan Murdoch were members.</span>
+</div>
+<div class="pos" id="_39:7269" style="top:7269;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+The first official release came in 1995. The Comprehensive R Archive Network (CRAN) was officially </span>
+</div>
+<div class="pos" id="_39:7298" style="top:7298;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+announced 23 April 1997 with 3 mirrors and 12 contributed packages. The first official "stable beta" version </span>
+</div>
+<div class="pos" id="_39:7327" style="top:7327;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+(v1.0) was released on 29 February 2000.</span>
+</div>
+<div class="pos" id="_39:7364" style="top:7364;left:39">
+<span id="_18.8" style="font-weight:bold; font-family:Times New Roman; font-size:18.8px; color:#000000">
+Features</span>
+</div>
+<div class="pos" id="_39:7403" style="top:7403;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Statistics</span>
+</div>
+<div class="pos" id="_39:7439" style="top:7439;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+R and its libraries implement various statistical and graphical techniques, </span>
+</div>
+<div class="pos" id="_39:7468" style="top:7468;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+including linear and nonlinear modeling, classical statistical tests, spatial and time-series analysis, </span>
+</div>
+<div class="pos" id="_39:7497" style="top:7497;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+classification, clustering, and others. R is easily extensible through functions and extensions, and its </span>
+</div>
+<div class="pos" id="_39:7526" style="top:7526;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+community is noted for contributing packages. Many of R's standard functions are written in R,[<span style="font-style:italic"><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed"> citation </span></span>
+</div>
+<div class="pos" id="_39:7554" style="top:7554;left:39">
+<span id="_16.1" style="font-style:italic; font-family:Times New Roman; font-size:16.1px; color:#000000">
+needed<span style="font-style:normal"></a> ] which makes it easy for users to follow the algorithmic choices made. For computationally intensive </span></span>
+</div>
+<div class="pos" id="_39:7583" style="top:7583;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+tasks, C, C++, and Fortran code can be linked and called at run time. Advanced users can write C, C++, </span>
+</div>
+<div class="pos" id="_39:7612" style="top:7612;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+<a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Java, .NET or Python code to manipulate R objects directly. R is highly extensible through the use of </span>
+</div>
+<div class="pos" id="_39:7641" style="top:7641;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+</a>packages for specific functions and specific applications. Due to its S heritage, R has stronger object-oriented </span>
+</div>
+<div class="pos" id="_39:7669" style="top:7669;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+<a href="https://en.wikipedia.org/wiki/Object-oriented_programming">programming facilities than most statistical computing languages.[<span style="font-style:italic"> citation needed</span></a> ] Extending it is facilitated </span>
+</div>
+<div class="pos" id="_39:7698" style="top:7698;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+by its lexical scoping rules.</span>
+</div>
+<div class="pos" id="_39:7734" style="top:7734;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Another of R's strengths is static graphics; it can produce publication-quality graphs that include mathematical </span>
+</div>
+<div class="pos" id="_39:7763" style="top:7763;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+symbols. Dynamic and interactive graphics are available through additional packages.</span>
+</div>
+<div class="pos" id="_39:7799" style="top:7799;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Programming</span>
+</div>
+<div class="pos" id="_39:7835" style="top:7835;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+R is an interpreted language; users typically access it through a command-line interpreter. If a user </span>
+</div>
+<div class="pos" id="_39:7865" style="top:7865;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+types 2+2 at the R command prompt and presses enter, the computer replies with 4.</span>
+</div>
+<div class="pos" id="_39:7903" style="top:7903;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Like languages such as APL and MATLAB, R supports matrix arithmetic. R's data </span>
+</div>
+<div class="pos" id="_39:7932" style="top:7932;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+<a href="https://en.wikipedia.org/wiki/Data_structure">structures include vectors, matrices, arrays, data frames (similar to tables in a relational database) </span>
+</div>
+<div class="pos" id="_39:7960" style="top:7960;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+</a>and lists. Arrays are stored in column-major order. R's extensible object system includes objects for (among </span>
+</div>
+<div class="pos" id="_39:7989" style="top:7989;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+others): regression models, time-series and geo-spatial coordinates. R has no scalar data type. Instead, a scalar </span>
+</div>
+<div class="pos" id="_39:8018" style="top:8018;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+is represented as a length-one vector.</span>
+</div>
+<div class="pos" id="_39:8054" style="top:8054;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Many features of R derive from Scheme. R uses S-expressions to represent both data and code.[<span style="font-style:italic"><a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed"> citation </span></span>
+</div>
+<div class="pos" id="_39:8083" style="top:8083;left:39">
+<span id="_16.1" style="font-style:italic; font-family:Times New Roman; font-size:16.1px; color:#000000">
+needed<span style="font-style:normal"></a> ] Functions are first-class objects and can be manipulated in the same way as data objects, </span></span>
+</div>
+<div class="pos" id="_39:8111" style="top:8111;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+facilitating meta-programming that allows multiple dispatch. Variables in R are lexically </span>
+</div>
+<div class="pos" id="_0:0" style="top:8190">
+<img name="_1170:827" src="page_008.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:8230" style="top:8230;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+<a href="https://en.wikipedia.org/wiki/Lexical_scope">scoped and dynamically typed. Function arguments are passed by value, and are lazy&#151;that is to say, they are </span>
+</div>
+<div class="pos" id="_39:8259" style="top:8259;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+</a>only evaluated when they are used, not when the function is called.</span>
+</div>
+<div class="pos" id="_39:8295" style="top:8295;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+R supports procedural programming with functions and, for some functions, object-oriented </span>
+</div>
+<div class="pos" id="_39:8324" style="top:8324;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+<a href="https://en.wikipedia.org/wiki/Object-oriented_programming">programming with generic functions.  A generic function acts differently depending on the classes of the </span>
+</div>
+<div class="pos" id="_39:8353" style="top:8353;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+</a>arguments passed to it. In other words, the generic function dispatches the method implementation specific to </span>
+</div>
+<div class="pos" id="_39:8383" style="top:8383;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+that object's class. For example, R has a generic print function that can print almost every class of object in R </span>
+</div>
+<div class="pos" id="_39:8414" style="top:8414;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+with print(objectname)</span>
+</div>
+<div class="pos" id="_39:8453" style="top:8453;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Although used mainly by statisticians and other practitioners seeking an environment for statistical </span>
+</div>
+<div class="pos" id="_39:8481" style="top:8481;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+computation and software development, R can also operate as a general matrix calculation toolbox &#150; with </span>
+</div>
+<div class="pos" id="_39:8510" style="top:8510;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+performance benchmarks comparable to GNU Octave or MATLAB.</span>
+</div>
+<div class="pos" id="_39:8547" style="top:8547;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+HARDWARE AND SOFTWARE REQUIREMENTS</span>
+</div>
+<div class="pos" id="_39:8580" style="top:8580;left:39">
+<span id="_16.1" style="font-weight:bold; font-family:Times New Roman; font-size:16.1px; color:#000000">
+HARDWARE REQUIREMENTS <span id="_14.7" style=" font-size:14.7px"> </span></span>
+</div>
+<div class="pos" id="_39:8603" style="top:8603;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Processor &#150; Intel(R) Core (TM) i5-8265U CPU @ 1.60GHz 1.80 GHz </span></span>
+</div>
+<div class="pos" id="_39:8631" style="top:8631;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Hard disk: 1TB  RAM: 8.00 GB (7.89 GB usable) </span></span>
+</div>
+<div class="pos" id="_39:8660" style="top:8660;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> SYSTEM TYPE: 64-bit operating system, x64-based processor</span></span>
+</div>
+<div class="pos" id="_39:8722" style="top:8722;left:39">
+<span id="_16.1" style="font-weight:bold; font-family:Times New Roman; font-size:16.1px; color:#000000">
+SOFTWARE REQUIREMENTS </span>
+</div>
+<div class="pos" id="_39:8744" style="top:8744;left:39">
+<span id="_26.8" style=" font-family:Times New Roman; font-size:26.8px; color:#000000">
+&#160;<span id="_16.9" style=" font-size:16.9px"> WINDOWS 10 </span></span>
+</div>
+<div class="pos" id="_39:8773" style="top:8773;left:39">
+<span id="_26.8" style=" font-family:Times New Roman; font-size:26.8px; color:#000000">
+&#160;<span id="_16.9" style=" font-size:16.9px"> RStudio (Rstudio IDE)</span></span>
+</div>
+<div class="pos" id="_39:8802" style="top:8802;left:39">
+<span id="_26.8" style=" font-family:Times New Roman; font-size:26.8px; color:#000000">
+&#160;<span id="_16.9" style=" font-size:16.9px"> CSV  dataset  </span></span>
+</div>
+<div class="pos" id="_39:8878" style="top:8878;left:39">
+<span id="_18.8" style="font-weight:bold; font-family:Times New Roman; font-size:18.8px; color:#000000">
+DATA FLOW DIAGRAM</span>
+</div>
+<div class="pos" id="_0:0" style="top:9360">
+<img name="_1170:827" src="page_009.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:9435" style="top:9435;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+SCREEN SHOTS & explanation</span>
+</div>
+<div class="pos" id="_39:9469" style="top:9469;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+IMPORTING THE DATASET</span>
+</div>
+<div class="pos" id="_39:9597" style="top:9597;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.0" style=" font-size:16.0px"> R packages are a collection of R functions, compiled code and sample data. They are stored under a </span></span>
+</div>
+<div class="pos" id="_68:9639" style="top:9639;left:68">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+directory called "library" in the R environment.</span>
+</div>
+<div class="pos" id="_39:9655" style="top:9655;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.0" style=" font-size:16.0px"> Here, I&#146;m importing the datasets that contain transactions made by credit cards.</span></span>
+</div>
+<div class="pos" id="_39:9684" style="top:9684;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.0" style=" font-size:16.0px"> I&#146;m using read.csv() function to read  credit card.csv file which in my current working directory </span></span>
+</div>
+<div class="pos" id="_39:9712" style="top:9712;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.0" style=" font-size:16.0px"> And printing the data in the credit card.csv file.</span></span>
+</div>
+<div class="pos" id="_39:9784" style="top:9784;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Data Exploration</span>
+</div>
+<div class="pos" id="_39:9828" style="top:9828;left:39">
+<span id="_18.7" style=" font-family:Times New Roman; font-size:18.7px; color:#000000">
+Code:</span>
+</div>
+<div class="pos" id="_39:10017" style="top:10017;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+Output:</span>
+</div>
+<div class="pos" id="_0:0" style="top:10530">
+<img name="_1170:827" src="page_010.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:11283" style="top:11283;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px; color:#05153f"> Data exploration is a vital process in data science. Data exploration is to highlight traits of single </span></span>
+</div>
+<div class="pos" id="_68:11325" style="top:11325;left:68">
+<span id="_16.3" style=" font-family:Times New Roman; font-size:16.3px; color:#05153f">
+variables, and reveal patterns and relationships between variables.</span>
+</div>
+<div class="pos" id="_39:11341" style="top:11341;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px; color:#1f2023"> The dim() is an inbuilt R function that either sets or returns the dimension of the matrix, array, or data </span></span>
+</div>
+<div class="pos" id="_68:11383" style="top:11383;left:68">
+<span id="_16.3" style=" font-family:Times New Roman; font-size:16.3px; color:#1f2023">
+frame. </span>
+</div>
+<div class="pos" id="_39:11398" style="top:11398;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> Here, I explore the data that is contained in the creditcard_data dataframe.</span></span>
+</div>
+<div class="pos" id="_39:11427" style="top:11427;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> Using read. csv function, the csv dataset credit card is read into the data frame variable creditcard_data.  </span></span>
+</div>
+<div class="pos" id="_39:11456" style="top:11456;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> I have used the head function and tail function to display the first 10 rows and last 10 rows. </span></span>
+</div>
+<div class="pos" id="_39:11485" style="top:11485;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> Then, I proceed to explore the other components of this dataframe.</span></span>
+</div>
+<div class="pos" id="_39:11513" style="top:11513;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> Functions like table(), summary(), names(), var(), sd() are also used</span></span>
+</div>
+<div class="pos" id="_39:11542" style="top:11542;left:39">
+<span id="_25.9" style=" font-family:Times New Roman; font-size:25.9px; color:#000000">
+&#160;<span id="_16.3" style=" font-size:16.3px"> In the table()function I have used the class feature to check if the dataset is balanced or not. Class feature </span></span>
+</div>
+<div class="pos" id="_68:11584" style="top:11584;left:68">
+<span id="_16.3" style=" font-family:Times New Roman; font-size:16.3px; color:#000000">
+is a responsive variable where  0- non fraudulent     1- fraudulent  284,315    492 so it is an unbalanced </span>
+</div>
+<div class="pos" id="_68:11613" style="top:11613;left:68">
+<span id="_16.3" style=" font-family:Times New Roman; font-size:16.3px; color:#000000">
+dataset.</span>
+</div>
+<div class="pos" id="_0:0" style="top:11700">
+<img name="_1170:827" src="page_011.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:11727" style="top:11727;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px; color:#1f2023"> table() function- to create a categorical representation of data with variable name and the frequency in the </span></span>
+</div>
+<div class="pos" id="_68:11769" style="top:11769;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#1f2023">
+form of a table.</span>
+</div>
+<div class="pos" id="_39:11785" style="top:11785;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px; color:#1f2023"> In the summary () function I have used the amount feature because we don't know more detail about other </span></span>
+</div>
+<div class="pos" id="_68:11827" style="top:11827;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#1f2023">
+features. I have taken the amount feature to find the summary. So in summary, the function returned </span>
+</div>
+<div class="pos" id="_68:11855" style="top:11855;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#1f2023">
+descriptive statistics such as the minimum, the first quantile, the median, the mean, the 3rd quantile, and </span>
+</div>
+<div class="pos" id="_68:11884" style="top:11884;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#1f2023">
+the maximum value of the amount feature.</span>
+</div>
+<div class="pos" id="_39:11900" style="top:11900;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px; color:#1f2023"> Name () function- I have used the name to return a  set of the names of a dataset.</span></span>
+</div>
+<div class="pos" id="_39:11929" style="top:11929;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px; color:#1f2023"> Here also I have used the amount feature to find the statistical function. In statistical function var() </span></span>
+</div>
+<div class="pos" id="_68:11970" style="top:11970;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#1f2023">
+function and sd() function</span>
+</div>
+<div class="pos" id="_39:11986" style="top:11986;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px; color:#1f2023"> By using the var()function I am going to compute the sample variance of an amount.</span></span>
+</div>
+<div class="pos" id="_39:12015" style="top:12015;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px; color:#1f2023"> sd() function is used to compute the standard deviation of given values in amount.</span></span>
+</div>
+<div class="pos" id="_39:12087" style="top:12087;left:39">
+<span id="_18.8" style="font-weight:bold; font-family:Times New Roman; font-size:18.8px; color:#000000">
+Data Visualization</span>
+</div>
+<div class="pos" id="_39:12130" style="top:12130;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Code:</span>
+</div>
+<div class="pos" id="_39:12241" style="top:12241;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#1f2023">
+Output:</span>
+</div>
+<div class="pos" id="_39:12703" style="top:12703;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> By using data visualization we can know more details about the data into charts, graphs and other visuals.</span></span>
+</div>
+<div class="pos" id="_39:12732" style="top:12732;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Here, I have used pie chart for knowing more about the dataset.</span></span>
+</div>
+<div class="pos" id="_39:12760" style="top:12760;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> I have used c function to combine the non-fruad and fraud and it stores in the variable called labels.</span></span>
+</div>
+<div class="pos" id="_0:0" style="top:12870">
+<img name="_1170:827" src="page_012.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:12897" style="top:12897;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Then I have used paste function to concatenate the labels and round.</span></span>
+</div>
+<div class="pos" id="_39:12926" style="top:12926;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> In round function I have given table function in the dataset by extracting class feature.</span></span>
+</div>
+<div class="pos" id="_39:12955" style="top:12955;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Then I have used pop.table function for calculating the percentage of the class feature by giving 2 as </span></span>
+</div>
+<div class="pos" id="_68:12997" style="top:12997;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+decimal.</span>
+</div>
+<div class="pos" id="_39:13012" style="top:13012;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Then I have used paste0 function to concatenate the labels and percentage.</span></span>
+</div>
+<div class="pos" id="_39:13041" style="top:13041;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Then I have used pie chart for plotting.</span></span>
+</div>
+<div class="pos" id="_39:13070" style="top:13070;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> In pie I have used table function in the dataset by extracting class feature and I have labels then by using c </span></span>
+</div>
+<div class="pos" id="_68:13112" style="top:13112;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+function I have combine the color blue and red blue is for non fraud and red is for fraud.</span>
+</div>
+<div class="pos" id="_39:13127" style="top:13127;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Then I have given main to to the heading of pie chart.</span></span>
+</div>
+<div class="pos" id="_39:13156" style="top:13156;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px">  In the chart it shows that 99.83% for non-fraud and 0.17% for fraud.</span></span>
+</div>
+<div class="pos" id="_39:13219" style="top:13219;left:39">
+<span id="_18.9" style="font-weight:bold; font-family:Times New Roman; font-size:18.9px; color:#000000">
+Data Manipulation</span>
+</div>
+<div class="pos" id="_39:13263" style="top:13263;left:39">
+<span id="_18.9" style=" font-family:Times New Roman; font-size:18.9px; color:#000000">
+Code:</span>
+</div>
+<div class="pos" id="_39:13385" style="top:13385;left:39">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#1f2023">
+Output:</span>
+</div>
+<div class="pos" id="_0:0" style="top:14040">
+<img name="_1170:827" src="page_013.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:14535" style="top:14535;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px; color:#212121"> If we want to use more advanced techniques, like machine learning. We often need to restructure the data; </span></span>
+</div>
+<div class="pos" id="_68:14577" style="top:14577;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#212121">
+create new variables; aggregate the data; and visualize the data all of which often require data </span>
+</div>
+<div class="pos" id="_68:14606" style="top:14606;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#212121">
+manipulation tools.</span>
+</div>
+<div class="pos" id="_39:14649" style="top:14649;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Here, the data is composed of attributes with varying scale.</span></span>
+</div>
+<div class="pos" id="_39:14706" style="top:14706;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> So we have to re-scale the attributes to the same range. </span></span>
+</div>
+<div class="pos" id="_39:14762" style="top:14762;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> We will scale our data using the scale() function. </span></span>
+</div>
+<div class="pos" id="_39:14791" style="top:14791;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> We will apply this to the amount component of our creditcard_data amount.</span></span>
+</div>
+<div class="pos" id="_39:14820" style="top:14820;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Scaling is also known as feature standardization. </span></span>
+</div>
+<div class="pos" id="_39:14848" style="top:14848;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> With the help of scaling, the data is structured according to a specified range.</span></span>
+</div>
+<div class="pos" id="_39:14877" style="top:14877;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Therefore, there are no extreme values in our dataset that might interfere with the functioning of our </span></span>
+</div>
+<div class="pos" id="_68:14919" style="top:14919;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+model.  </span>
+</div>
+<div class="pos" id="_39:14935" style="top:14935;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Scale () function in R Language is a generic function which centers and scales the columns of a numeric </span></span>
+</div>
+<div class="pos" id="_68:14977" style="top:14977;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+matrix. </span>
+</div>
+<div class="pos" id="_39:14992" style="top:14992;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> The center parameter takes either a numeric-like vector or logical value. </span></span>
+</div>
+<div class="pos" id="_39:15021" style="top:15021;left:39">
+<span id="_25.6" style=" font-family:Times New Roman; font-size:25.6px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> If the numeric vector is provided, then each column of the matrix has the corresponding value from the </span></span>
+</div>
+<div class="pos" id="_68:15063" style="top:15063;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+center subtracted from it.</span>
+</div>
+<div class="pos" id="_0:0" style="top:15210">
+<img name="_1170:827" src="page_014.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:15252" style="top:15252;left:39">
+<span id="_18.8" style="font-weight:bold; font-family:Times New Roman; font-size:18.8px; color:#000000">
+Data Modeling</span>
+</div>
+<div class="pos" id="_39:15296" style="top:15296;left:39">
+<span id="_18.8" style=" font-family:Times New Roman; font-size:18.8px; color:#000000">
+Code:</span>
+</div>
+<div class="pos" id="_39:15462" style="top:15462;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+Output:</span>
+</div>
+<div class="pos" id="_39:15625" style="top:15625;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Here we use machine learning techniques like decision tree, logistic regression . </span></span>
+</div>
+<div class="pos" id="_39:15654" style="top:15654;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Identify  the model that fits for this project and we train the model in the dataset and test them. To select </span></span>
+</div>
+<div class="pos" id="_68:15696" style="top:15696;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+the best performing model.</span>
+</div>
+<div class="pos" id="_39:15712" style="top:15712;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> After,  the entire dataset  standardized .</span></span>
+</div>
+<div class="pos" id="_39:15740" style="top:15740;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> I split the data frame into a training set and testing set using the function sample.split. </span></span>
+</div>
+<div class="pos" id="_39:15769" style="top:15769;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Sample.split function splits the data using given ratio in our case 80% for training set and 20% for testing </span></span>
+</div>
+<div class="pos" id="_68:15811" style="top:15811;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+set</span>
+</div>
+<div class="pos" id="_39:15827" style="top:15827;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Dim() function that returns the dimension of the training set and testing set. </span></span>
+</div>
+<div class="pos" id="_39:15855" style="top:15855;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> The set. seed() function sets the starting number used to generate a sequence of random numbers &#150; it </span></span>
+</div>
+<div class="pos" id="_68:15897" style="top:15897;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+ensures that we get the same result if we start with that same seed each time you run the same process.</span>
+</div>
+<div class="pos" id="_39:15956" style="top:15956;left:39">
+<span id="_18.8" style="font-weight:bold; font-family:Times New Roman; font-size:18.8px; color:#000000">
+Logistic Regression</span>
+</div>
+<div class="pos" id="_39:16000" style="top:16000;left:39">
+<span id="_18.8" style=" font-family:Times New Roman; font-size:18.8px; color:#000000">
+Code:</span>
+</div>
+<div class="pos" id="_0:0" style="top:16380">
+<img name="_1170:827" src="page_015.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:16420" style="top:16420;left:39">
+<span id="_16.3" style=" font-family:Times New Roman; font-size:16.3px; color:#424242">
+Output:</span>
+</div>
+<div class="pos" id="_0:0" style="top:17550">
+<img name="_1170:827" src="page_016.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:17600" style="top:17600;left:39">
+<span id="_26.2" style=" font-family:Times New Roman; font-size:26.2px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> Here, I'm fitting  model with the logistic regression. </span></span>
+</div>
+<div class="pos" id="_39:17628" style="top:17628;left:39">
+<span id="_26.2" style=" font-family:Times New Roman; font-size:26.2px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> A logistic regression is used for modeling the outcome probability of a class such as pass/fail, </span></span>
+</div>
+<div class="pos" id="_68:17670" style="top:17670;left:68">
+<span id="_16.5" style=" font-family:Times New Roman; font-size:16.5px; color:#000000">
+positive/negative and in our case &#150; fraud/not fraud.</span>
+</div>
+<div class="pos" id="_39:17686" style="top:17686;left:39">
+<span id="_26.2" style=" font-family:Times New Roman; font-size:26.2px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> Here, I proceed to implement the model on the train data and find the summary of the train data by using </span></span>
+</div>
+<div class="pos" id="_68:17728" style="top:17728;left:68">
+<span id="_16.5" style=" font-family:Times New Roman; font-size:16.5px; color:#000000">
+summary function in that summary I will get Null deviance: 5799.1  on 227845  degrees of freedom </span>
+</div>
+<div class="pos" id="_68:17757" style="top:17757;left:68">
+<span id="_16.5" style=" font-family:Times New Roman; font-size:16.5px; color:#000000">
+Residual deviance: 1790.9  on 227816  degrees of freedom AIC: 1850.9.</span>
+</div>
+<div class="pos" id="_39:17772" style="top:17772;left:39">
+<span id="_26.2" style=" font-family:Times New Roman; font-size:26.2px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> Here,I proceed to implement this model on the test data in that by using confusion matrix im going find </span></span>
+</div>
+<div class="pos" id="_68:17814" style="top:17814;left:68">
+<span id="_16.5" style=" font-family:Times New Roman; font-size:16.5px; color:#000000">
+the accuracy of this model. So the accuracy is 0.9988764.</span>
+</div>
+<div class="pos" id="_39:17867" style="top:17867;left:39">
+<span id="_19.2" style="font-weight:bold; font-family:Times New Roman; font-size:19.2px; color:#000000">
+Decision Tree</span>
+</div>
+<div class="pos" id="_39:17911" style="top:17911;left:39">
+<span id="_19.2" style=" font-family:Times New Roman; font-size:19.2px; color:#000000">
+Code:</span>
+</div>
+<div class="pos" id="_39:18103" style="top:18103;left:39">
+<span id="_19.2" style=" font-family:Times New Roman; font-size:19.2px; color:#000000">
+Output:</span>
+</div>
+<div class="pos" id="_39:18594" style="top:18594;left:39">
+<span id="_26.2" style=" font-family:Times New Roman; font-size:26.2px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> Here, I'm implementing  a decision tree algorithm. </span></span>
+</div>
+<div class="pos" id="_39:18622" style="top:18622;left:39">
+<span id="_26.2" style=" font-family:Times New Roman; font-size:26.2px; color:#000000">
+&#160;<span id="_16.5" style=" font-size:16.5px"> Decision Trees to plot the outcomes of a decision. </span></span>
+</div>
+<div class="pos" id="_0:0" style="top:18720">
+<img name="_1170:827" src="page_017.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:18747" style="top:18747;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> These outcomes are basically a consequence through which we can conclude as to what class the object </span></span>
+</div>
+<div class="pos" id="_68:18789" style="top:18789;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+belongs to. </span>
+</div>
+<div class="pos" id="_39:18805" style="top:18805;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Now implement the decision tree model and will plot it using the rpart.plot() function.</span></span>
+</div>
+<div class="pos" id="_39:18834" style="top:18834;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Here, I'm specifically using  the recursive parting to plot the decision tree.</span></span>
+</div>
+<div class="pos" id="_39:18896" style="top:18896;left:39">
+<span id="_18.9" style="font-weight:bold; font-family:Times New Roman; font-size:18.9px; color:#000000">
+DATA BASE DESIGN</span>
+</div>
+<div class="pos" id="_39:19267" style="top:19267;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The dataset that is used in this project is obtained from Kaggle .</span></span>
+</div>
+<div class="pos" id="_39:19296" style="top:19296;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The dataset contains transactions made by credit cards in September 2013 by European cardholders. </span></span>
+</div>
+<div class="pos" id="_39:19325" style="top:19325;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> This dataset presents transactions that occurred in two days, where it has 492 frauds out of 284,807 </span></span>
+</div>
+<div class="pos" id="_68:19366" style="top:19366;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+transactions. </span>
+</div>
+<div class="pos" id="_39:19382" style="top:19382;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The dataset is highly unbalanced, here are 492 fraudulent credit card transactions out of a total of 284,807 </span></span>
+</div>
+<div class="pos" id="_68:19424" style="top:19424;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+transactions, which is a total of about 0.172% of all transactions.</span>
+</div>
+<div class="pos" id="_39:19440" style="top:19440;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> All details of the cardholders have been anonymized via a principal component analysis (PCA) transform.</span></span>
+</div>
+<div class="pos" id="_39:19468" style="top:19468;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> It contains only numeric input variables which are the result of a PCA transformation. </span></span>
+</div>
+<div class="pos" id="_39:19497" style="top:19497;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Unfortunately, due to confidentiality issues, there are no original features and more background </span></span>
+</div>
+<div class="pos" id="_68:19539" style="top:19539;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+information about the data. </span>
+</div>
+<div class="pos" id="_39:19555" style="top:19555;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Features V1, V2, &#133; V28 are the principal components obtained with PCA, the only features which have </span></span>
+</div>
+<div class="pos" id="_68:19596" style="top:19596;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+not been transformed with PCA are &#145;Time&#146; and &#145;Amount&#146;. </span>
+</div>
+<div class="pos" id="_39:19612" style="top:19612;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Feature &#145;Time&#146; contains the seconds elapsed between each transaction and the first transaction in the </span></span>
+</div>
+<div class="pos" id="_68:19654" style="top:19654;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+dataset. </span>
+</div>
+<div class="pos" id="_39:19670" style="top:19670;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> The feature &#145;Amount&#146; is the transaction Amount, this feature can be used, for example-dependent cost-</span></span>
+</div>
+<div class="pos" id="_68:19711" style="top:19711;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+sensitive learning.</span>
+</div>
+<div class="pos" id="_39:19727" style="top:19727;left:39">
+<span id="_25.7" style=" font-family:Times New Roman; font-size:25.7px; color:#000000">
+&#160;<span id="_16.2" style=" font-size:16.2px"> Feature &#145;Class&#146; is the response variable and it takes class 1 value as fraudulent  and class 0 as Non-</span></span>
+</div>
+<div class="pos" id="_68:19769" style="top:19769;left:68">
+<span id="_16.2" style=" font-family:Times New Roman; font-size:16.2px; color:#000000">
+fraudulent and the transactions are heavily skewed towards Non-fraudulent. </span>
+</div>
+<div class="pos" id="_0:0" style="top:19890">
+<img name="_1170:827" src="page_018.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:19932" style="top:19932;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+TEST CASES</span>
+</div>
+<div class="pos" id="_39:19985" style="top:19985;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+CONCLUSION</span>
+</div>
+<div class="pos" id="_39:20023" style="top:20023;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> Basically, this project address the problem of credit card fraud detection .</span></span>
+</div>
+<div class="pos" id="_39:20052" style="top:20052;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> By building a classifier that can detect credit card fraudulent transactions.</span></span>
+</div>
+<div class="pos" id="_39:20081" style="top:20081;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> In first classifier logistic regression we find the accuracy where we get 0.9988764 which is high accuracy.</span></span>
+</div>
+<div class="pos" id="_39:20110" style="top:20110;left:39">
+<span id="_25.5" style=" font-family:Times New Roman; font-size:25.5px; color:#000000">
+&#160;<span id="_16.1" style=" font-size:16.1px"> In second classifier decision tree we plot the outcomes of the decisions.These outcomes are basically a </span></span>
+</div>
+<div class="pos" id="_68:20151" style="top:20151;left:68">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#1f2023">
+consequence through which we can conclude as to what class the object belongs to.</span>
+</div>
+<div class="pos" id="_39:20201" style="top:20201;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+SOURCE CODE</span>
+</div>
+<div class="pos" id="_39:20254" style="top:20254;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Importing the dataset</span>
+</div>
+<div class="pos" id="_39:20306" style="top:20306;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+library(ranger)</span>
+</div>
+<div class="pos" id="_39:20344" style="top:20344;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+library(caret)</span>
+</div>
+<div class="pos" id="_39:20383" style="top:20383;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+library(data.table)</span>
+</div>
+<div class="pos" id="_39:20421" style="top:20421;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+creditcard_data &lt;- read.csv("C:/Credit-card-dataset/creditcard.csv")</span>
+</div>
+<div class="pos" id="_39:20460" style="top:20460;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+print(creditcard_data)</span>
+</div>
+<div class="pos" id="_39:20500" style="top:20500;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Data exploration</span>
+</div>
+<div class="pos" id="_39:20552" style="top:20552;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+creditcard_data &lt;- read.csv("C:/Credit-card-dataset/creditcard.csv")</span>
+</div>
+<div class="pos" id="_39:20590" style="top:20590;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+dim(creditcard_data)</span>
+</div>
+<div class="pos" id="_39:20629" style="top:20629;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+head(creditcard_data,6)</span>
+</div>
+<div class="pos" id="_39:20667" style="top:20667;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+tail(creditcard_data,6)</span>
+</div>
+<div class="pos" id="_39:20706" style="top:20706;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+table(creditcard_data$Class)</span>
+</div>
+<div class="pos" id="_39:20745" style="top:20745;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+summary(creditcard_data$Amount)</span>
+</div>
+<div class="pos" id="_39:20783" style="top:20783;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+names(creditcard_data)</span>
+</div>
+<div class="pos" id="_39:20822" style="top:20822;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+var(creditcard_data$Amount)</span>
+</div>
+<div class="pos" id="_39:20862" style="top:20862;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Data Visualization</span>
+</div>
+<div class="pos" id="_39:20905" style="top:20905;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+labels = c("NON_FRAUD","FRAUD")</span>
+</div>
+<div class="pos" id="_39:20944" style="top:20944;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+labels = paste(labels,round(prop.table(table(creditcard_data$Class))*100,2))</span>
+</div>
+<div class="pos" id="_39:20982" style="top:20982;left:39">
+<span id="_16.1" style=" font-family:Times New Roman; font-size:16.1px; color:#000000">
+labels = paste0(labels,"%")</span>
+</div>
+<div class="pos" id="_0:0" style="top:21060">
+<img name="_1170:827" src="page_019.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:21100" style="top:21100;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+pie(table(creditcard_data$Class),labels,col = c("blue","red"),main = "Pie Chart of Credit Card fraud detection")</span>
+</div>
+<div class="pos" id="_39:21140" style="top:21140;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Data Manipulation</span>
+</div>
+<div class="pos" id="_39:21184" style="top:21184;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+head(creditcard_data)</span>
+</div>
+<div class="pos" id="_39:21222" style="top:21222;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+creditcard_data$Amount=scale(creditcard_data$Amount)</span>
+</div>
+<div class="pos" id="_39:21260" style="top:21260;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+NewData=creditcard_data[,-c(1)]</span>
+</div>
+<div class="pos" id="_39:21299" style="top:21299;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+head(NewData)</span>
+</div>
+<div class="pos" id="_39:21361" style="top:21361;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Data Modelling</span>
+</div>
+<div class="pos" id="_39:21404" style="top:21404;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+library(caTools)</span>
+</div>
+<div class="pos" id="_39:21433" style="top:21433;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+set.seed(123)</span>
+</div>
+<div class="pos" id="_39:21462" style="top:21462;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+data_sample = sample.split(NewData$Class,SplitRatio=0.80)</span>
+</div>
+<div class="pos" id="_39:21490" style="top:21490;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+train_data = subset(NewData,data_sample==TRUE)</span>
+</div>
+<div class="pos" id="_39:21519" style="top:21519;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+test_data = subset(NewData,data_sample==FALSE)</span>
+</div>
+<div class="pos" id="_39:21548" style="top:21548;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+dim(train_data)</span>
+</div>
+<div class="pos" id="_39:21577" style="top:21577;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+dim(test_data)</span>
+</div>
+<div class="pos" id="_39:21636" style="top:21636;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Logistic regression</span>
+</div>
+<div class="pos" id="_39:21668" style="top:21668;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+Logistic_Model=glm(Class~.,train_data,family=binomial())</span>
+</div>
+<div class="pos" id="_39:21696" style="top:21696;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+summary(Logistic_Model)</span>
+</div>
+<div class="pos" id="_39:21725" style="top:21725;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+res &lt;- predict(Logistic_Model,test_data,type = "response")</span>
+</div>
+<div class="pos" id="_39:21754" style="top:21754;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+confusion_matrix = table(Actualvalue=test_data$Class, predicted_val = res&gt;0.5)</span>
+</div>
+<div class="pos" id="_39:21783" style="top:21783;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+confusion_matrix</span>
+</div>
+<div class="pos" id="_39:21811" style="top:21811;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+#confusion matrix </span>
+</div>
+<div class="pos" id="_39:21840" style="top:21840;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+(56857+41)/(56857+7+57+41)</span>
+</div>
+<div class="pos" id="_39:21904" style="top:21904;left:39">
+<span id="_18.7" style="font-weight:bold; font-family:Times New Roman; font-size:18.7px; color:#000000">
+Decision Tree</span>
+</div>
+<div class="pos" id="_39:21936" style="top:21936;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+library(rpart)</span>
+</div>
+<div class="pos" id="_39:21965" style="top:21965;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+library(rpart.plot)</span>
+</div>
+<div class="pos" id="_39:21994" style="top:21994;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+decisionTree_model &lt;- rpart(Class ~ . , creditcard_data, method = 'class')</span>
+</div>
+<div class="pos" id="_39:22022" style="top:22022;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+predicted_val &lt;- predict(decisionTree_model, creditcard_data, type = 'class')</span>
+</div>
+<div class="pos" id="_39:22051" style="top:22051;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+probability &lt;- predict(decisionTree_model, creditcard_data, type = 'prob')</span>
+</div>
+<div class="pos" id="_39:22080" style="top:22080;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+rpart.plot(decisionTree_model)</span>
+</div>
+<div class="pos" id="_39:22109" style="top:22109;left:39">
+<span id="_16.0" style=" font-family:Times New Roman; font-size:16.0px; color:#000000">
+print.eval = TRUE</span>
+</div>
+<div class="pos" id="_0:0" style="top:22230">
+<img name="_1170:827" src="page_020.jpg" height="1170" width="827" border="0" usemap="#Map"></div>
+<div class="pos" id="_39:22272" style="top:22272;left:39">
+<span id="_18.6" style="font-weight:bold; font-family:Times New Roman; font-size:18.6px; color:#000000">
+BIBLIOGRAPHY</span>
+</div>
+<div class="pos" id="_39:22323" style="top:22323;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+<a href="http://ijsart.com/Content/PDFDocuments/IJSARTV7I543567.pdf">http://ijsart.com/Content/PDFDocuments/IJSARTV7I543567.pdf</span>
+</div>
+<div class="pos" id="_39:22372" style="top:22372;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+</a>https://www.statology.org/plot-logistic-regression-in-r/</span>
+</div>
+<div class="pos" id="_39:22420" style="top:22420;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+<a href="https://en.wikipedia.org/wiki/Recursive_partitioning#Examples">https://en.wikipedia.org/wiki/Recursive_partitioning#Examples</span>
+</div>
+<div class="pos" id="_39:22456" style="top:22456;left:39">
+<span id="_15.9" style=" font-family:Times New Roman; font-size:15.9px; color:#000000">
+</a>https://namithadeshpande.medium.com/credit-card-fraud-detection-in-r-94cab980de3f</span>
+</div>
+</nowrap></nobr>
+</body>
+</html>
